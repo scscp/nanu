@@ -151,7 +151,7 @@ domain=$(cat /etc/xray/domain)
 date=$(date +"%Y-%m-%d")
 
 #link izin ip vps
-url_izin='https://raw.githubusercontent.com/Rerechan02/iziznscript/main/ip'
+url_izin='https://raw.githubusercontent.com/scscp/izin/main/ip'
 
 # Mendapatkan IP VPS saat ini
 ip_vps=$(curl -s ifconfig.me)
@@ -753,7 +753,7 @@ https://wa.me/6283120684925 </font><br>
 <font color="#00FFE2">क═══════क⊹⊱✫⊰⊹क═══════क</font><br></font><br><font color="FFFF00">❖Ƭʜᴇ WHATSAPP GRUP => https://chat.whatsapp.com/LlJmbvSQ2DsHTA1EccNGoO</font><br>
 END
 apt -y install dropbear
-wget -O /etc/default/dropbear https://raw.githubusercontent.com/Rerechan02/nani/main/dropbear
+wget -O /etc/default/dropbear https://raw.githubusercontent.com/scscp/nani/main/dropbear
 sleep 0.5
 /etc/init.d/dropbear restart
 cd
@@ -928,7 +928,7 @@ if ! grep -q 'ssl_renew.sh' /var/spool/cron/crontabs/root;then (crontab -l;echo 
 mkdir -p /home/vps/public_html
 
 # set uuid
-wget -O /etc/xray/config.json https://raw.githubusercontent.com/Rerechan02/nani/main/config.json
+wget -O /etc/xray/config.json https://raw.githubusercontent.com/scscp/nani/main/config.json
 clear
 rm -rf /etc/systemd/system/xray.service.d
 rm -rf /etc/systemd/system/xray@.service
@@ -1014,7 +1014,7 @@ server {
   }
 }
 NG
-wget -O /etc/nginx/conf.d/xray.conf https://raw.githubusercontent.com/Rerechan02/nani/main/xray.conf
+wget -O /etc/nginx/conf.d/xray.conf https://raw.githubusercontent.com/scscp/nani/main/xray.conf
 wget -O /var/www/html/index.html https://github.com/Rerechan02/Rerechan02.github.io/raw/main/index.html
 sed -i "s/xxx/${domain}/g" /etc/nginx/conf.d/xray.conf
 echo -e "$yell[SERVICE]$NC Restart All service"
@@ -1371,7 +1371,7 @@ clear
 cd /usr/bin
 rm -fr menu
 rm -fr /usr/sbin/menu
-wget https://raw.githubusercontent.com/Rerechan02/nani/main/funny.zip
+wget https://raw.githubusercontent.com/scscp/nani/main/funny.zip
 unzip funny.zip
 rm -fr funny.zip
 clear
